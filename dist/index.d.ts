@@ -1,2 +1,2 @@
-export { LanternsReact as MyComponentReact } from './MyComponentReact';
+export { LanternsReact } from './MyComponentReact';
 //# sourceMappingURL=index.d.ts.map

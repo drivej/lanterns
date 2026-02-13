@@ -1,1 +1,1 @@
-export { LanternsReact as MyComponentReact } from './MyComponentReact';
+export { LanternsReact } from './MyComponentReact';

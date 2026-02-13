@@ -3199,6 +3199,6 @@ const ns = (o) => {
   }, []), /* @__PURE__ */ fr("div", { ref: t, style: { width: 500, height: 500 }, ...o, children: "Component" });
 }, hs = () => /* @__PURE__ */ fr(ns, {});
 export {
-  hs as MyComponentReact
+  hs as LanternsReact
 };
 //# sourceMappingURL=index.js.map
