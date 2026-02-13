@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useResizeObserver } from 'usehooks-ts';
 import { destroy, init } from './lanterns';
 
-export const MyComponent = () => {
+export const MyComponent = (props: React.HTMLAttributes<HTMLDivElement>) => {
   const container = useRef<HTMLDivElement>(null!);
   const { width, height } = useResizeObserver({ ref: container });
   const [stage, setStage] = useState<CanvasStage | null>(null);
@@ -24,7 +24,11 @@ export const MyComponent = () => {
     }
   }, []);
 
-  return <div ref={container} style={{width:500, height:500}}>Component</div>;
+  return (
+    <div ref={container} style={{ width: 500, height: 500 }} {...props}>
+      Component
+    </div>
+  );
 };
 
 export default MyComponent;

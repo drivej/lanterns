@@ -1,5 +1,5 @@
 import MyComponent from './component/MyComponent.js';
 
-export const MyComponentReact = () => {
+export const LanternsReact = () => {
   return <MyComponent />;
 };
