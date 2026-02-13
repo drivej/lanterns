@@ -1,7 +1,7 @@
 {
-  "name": "@drivej/space-balls",
+  "name": "@drivej/lanterns",
   "version": "1.0.1",
-  "description": "Space Balls Animation",
+  "description": "Lanterns Animation",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
