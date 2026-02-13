@@ -16,7 +16,9 @@ export const MyComponent = (props: React.HTMLAttributes<HTMLDivElement>) => {
 
   useEffect(() => {
     if (container.current) {
-      setStage(init(container.current));
+      const _stage = init(container.current);
+      _stage.setSize(width, height);
+      setStage(_stage);
       return () => {
         setStage(null);
         destroy();
@@ -24,11 +26,7 @@ export const MyComponent = (props: React.HTMLAttributes<HTMLDivElement>) => {
     }
   }, []);
 
-  return (
-    <div ref={container} style={{ width: 500, height: 500 }} {...props}>
-      Component
-    </div>
-  );
+  return <div ref={container} style={{ width: 500, height: 500 }} {...props} />;
 };
 
 export default MyComponent;

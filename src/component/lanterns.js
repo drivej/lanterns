@@ -38,7 +38,8 @@ function initStage() {
     userBounds: {
       minY: -10000,
       maxY: 10000
-    }
+    },
+    fullscreen: false
   });
 }
 
@@ -94,9 +95,9 @@ function initFog() {
         beforeUpdate: function () {
           this.setProperty({ z: stage.camera.z + this.offSetZ });
         },
-        onResize: function () {
-          this.setProperty({ width: window.innerWidth, height: window.innerHeight });
-        }
+        // onResize: function () {
+        //   this.setProperty({ width: window.innerWidth, height: window.innerHeight });
+        // }
       })
     );
   }

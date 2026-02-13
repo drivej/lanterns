@@ -3099,7 +3099,8 @@ function ja() {
     userBounds: {
       minY: -1e4,
       maxY: 1e4
-    }
+    },
+    fullscreen: !1
   });
 }
 function Xa() {
@@ -3135,10 +3136,10 @@ function ts() {
         fillStyle: `rgba(10,5,50,${h})`,
         beforeUpdate: function() {
           this.setProperty({ z: wt.camera.z + this.offSetZ });
-        },
-        onResize: function() {
-          this.setProperty({ width: window.innerWidth, height: window.innerHeight });
         }
+        // onResize: function () {
+        //   this.setProperty({ width: window.innerWidth, height: window.innerHeight });
+        // }
       })
     );
   }
@@ -3192,11 +3193,13 @@ const ns = (o) => {
   return Fe(() => {
     r && r.setSize(e, i);
   }, [e, i]), Fe(() => {
-    if (t.current)
-      return n(is(t.current)), () => {
+    if (t.current) {
+      const a = is(t.current);
+      return a.setSize(e, i), n(a), () => {
         n(null), rs();
       };
-  }, []), /* @__PURE__ */ gn("div", { ref: t, style: { width: 500, height: 500 }, ...o, children: "Component" });
+    }
+  }, []), /* @__PURE__ */ gn("div", { ref: t, style: { width: 500, height: 500 }, ...o });
 }, hs = ns;
 export {
   hs as LanternsReact
