@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/robots.txt",
+    "exact": true,
+    "code": 301,
+    "to": "/norobots.txt"
+  }
+]

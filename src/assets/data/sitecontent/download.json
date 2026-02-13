@@ -1,0 +1,57 @@
+{
+  "head": {
+    "title": "Download App - Swell",
+    "meta": [{ "property": "title", "content": "Swell - Listen to Life" }]
+  },
+  "body": {
+    "children": [
+      {
+        "tag": "div",
+        "props": {
+          "className": "body-copy"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "props": {
+              "className": "body-copy d-flex flex-column justify-content-center align-items-center",
+              "style": { "minHeight": "66vh" }
+            },
+            "children": [
+              {
+                "tag": "h1",
+                "props": { "className": "mb-4 text-center" },
+                "children": ["Looking for a Swell conversation?"]
+              },
+              {
+                "tag": "h2",
+                "props": { "className": "text-center mb-4" },
+                "children": ["Download the app. Join the conversation."]
+              },
+              {
+                "tag": "div",
+                "props": { "className": "mt-2" }
+              },
+              {
+                "tag": "AppStoreButton"
+              },
+              {
+                "tag": "a",
+                "props": { "className": "mt-4", "href": "https://swell.life" },
+                "children": ["<p>What is this?</p>"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "props": {
+          "style": {
+            "backgroundColor": "#fff"
+          }
+        }
+      }
+    ]
+  }
+}

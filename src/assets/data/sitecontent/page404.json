@@ -1,0 +1,87 @@
+{
+  "head": {
+    "title": "Page Not Found - Swell",
+    "meta": [{ "property": "title", "content": "Swell - Page Not Found" }]
+  },
+  "body": {
+    "props": { "className": "bg-grey-light" },
+    "children": [
+      {
+        "tag": "Container",
+        "children": [
+          {
+            "tag": "Row",
+            "children": [
+              {
+                "tag": "Col",
+                "props": { "className": "p-4", "lg": { "size": 10, "offset": 1 } },
+                "children": [
+                  {
+                    "tag": "PageHeading",
+                    "props": { "title": "404: Page not found" }
+                  },
+
+                  {
+                    "tag": "h3",
+                    "props": {
+                      "className": "mb-3"
+                    },
+                    "children": ["The page you are looking for is either... "]
+                  },
+                  {
+                    "tag": "h5",
+                    "props": {
+                      "className": "mb-3"
+                    },
+                    "children": ["A) Late for work"]
+                  },
+                  {
+                    "tag": "h5",
+                    "props": {
+                      "className": "mb-3"
+                    },
+                    "children": ["B) On vacation"]
+                  },
+                  {
+                    "tag": "h5",
+                    "props": {
+                      "className": "mb-4"
+                    },
+                    "children": ["C) \"Working\" from home"]
+                  },
+                  {
+                    "tag": "p",
+                    "children": ["All we know for sure is that it's not here."]
+                  },
+                  {
+                    "tag": "a",
+                    "props": {
+                      "href": "/",
+                      "className": "btn btn-primary mr-2 mb-2"
+                    },
+                    "text": "Go to the home page"
+                  },
+                  {
+                    "tag": "a",
+                    "props": {
+                      "href": "/contact",
+                      "className": "btn btn-primary mr-2 mb-2"
+                    },
+                    "text": "Speak with the manager"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "AssetImage",
+        "props": {
+          "src": "/swellcast/sitecontent/images/wave-t-w.min.png",
+          "className": "w-100"
+        }
+      }
+    ]
+  }
+}

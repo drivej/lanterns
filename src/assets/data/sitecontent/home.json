@@ -1,0 +1,75 @@
+{
+  "head": {
+    "title": "Swell - Original, Extraordinary Audio Conversations",
+    "meta": [{ "property": "title", "content": "Swell - Original, Extraordinary Audio Conversations" }]
+  },
+  "body": {
+    "children": [
+      {
+        "tag": "Container",
+        "children": [
+          {
+            "tag": "Row",
+            "props": {
+              "className": "mt-5 mb-4"
+            },
+            "children": [
+              {
+                "tag": "Col",
+                "props": {
+                  "className": "p-3"
+                },
+                "children": [
+                  "<h1>Original, Extraordinary Audio Conversations</h1>",
+                  "<p className='mb-5'>Learn more at <a href='https://swell.life'>Swell.life</a>, or get the free app to start or join any conversation. Listen to sample conversations below.</p>"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "Row",
+            "children": [
+              {
+                "tag": "Col",
+                "props": { "className": "p-2" },
+                "children": [
+                  {
+                    "tag": "FeaturedList"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "Row",
+            "props": {
+              "className": "px-2 pt-5"
+            },
+            "children": [
+              {
+                "tag": "Col",
+                "props": {
+                  "className": "border rounded p-4 text-center"
+                },
+                "children": [
+                  {
+                    "tag": "h2",
+                    "props": { "className": "mb-4" },
+                    "children": ["Get the full Swell experience on Android and iPhone &mdash; Swell is Free"]
+                  },
+                  {
+                    "tag": "div",
+                    "props": { "className": "mt-2" }
+                  },
+                  {
+                    "tag": "AppStoreButton"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

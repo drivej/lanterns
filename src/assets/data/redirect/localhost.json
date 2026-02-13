@@ -1,0 +1,13 @@
+[
+  {
+    "path": "/favicon.ico",
+    "code": 301,
+    "to": "https://assets.swell.life/public/img/favicon-16x16.png"
+  },
+  {
+    "path": "/robots.txt",
+    "exact": true,
+    "code": 301,
+    "to": "/norobots.txt"
+  }
+]
