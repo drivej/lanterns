@@ -195,9 +195,9 @@ function init(container) {
   initLanterns();
   container.appendChild(stage.cvs);
 
-  stage.cvs.addEventListener('pointerdown', stopScroll);
-  stage.cvs.addEventListener('pointermove', stopScroll);
-  stage.cvs.addEventListener('pointerup', stopScroll);
+  stage.cvs.addEventListener('pointerdown', stopScroll, { passive: false });
+  stage.cvs.addEventListener('pointermove', stopScroll, { passive: false });
+  stage.cvs.addEventListener('pointerup', stopScroll, { passive: false });
 
   return stage;
 }
