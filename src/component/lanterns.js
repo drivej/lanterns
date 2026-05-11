@@ -94,7 +94,7 @@ function initFog() {
         fillStyle: `rgba(10,5,50,${alpha})`,
         beforeUpdate: function () {
           this.setProperty({ z: stage.camera.z + this.offSetZ });
-        },
+        }
         // onResize: function () {
         //   this.setProperty({ width: window.innerWidth, height: window.innerHeight });
         // }
@@ -194,7 +194,17 @@ function init(container) {
   initFog();
   initLanterns();
   container.appendChild(stage.cvs);
+
+  stage.cvs.addEventListener('pointerdown', stopScroll);
+  stage.cvs.addEventListener('pointermove', stopScroll);
+  stage.cvs.addEventListener('pointerup', stopScroll);
+
   return stage;
+}
+
+function stopScroll(e) {
+  e.stopPropagation();
+  e.preventDefault();
 }
 
 function destroy() {
